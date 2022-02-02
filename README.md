@@ -1,9 +1,9 @@
 # portifolio
 Meu Portfólio de Desenvolvedor
 
-##Icones
+# Icones
 
-:oculos escuros: nova funcionalidades
-:up: atualizações
-:beatle: correção de bug
-:checkered_flag: release
+-:oculos escuros: nova funcionalidades
+-:up: atualizações
+-:beetle: correção de bug
+-:checkered_flag: release
