@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Orçamento</title>
+</head>
+<body>
+
+    <section class="sessao-orcamento">
+
+        <div class="orcamento-wrapper">
+            <h1>Faça um Orcamento</h1>
+
+            <form>
+                <label for="q-paginas">Quanidade de Paginas</label>
+                <input type="number" name="qtde" id="qtde" min="1">
+                
+                <label for="js">Preciso de um JS</label>
+                <input type="checkbox" name="js" id="js">
+
+                <label>Layout</label>
+                <div class="grup-layout">
+                    <div class="precisa-layout">
+                        <input type="radio" name="layout" id="layout">
+                        <label for="layout-sim">Preciso de um Layout</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="layout" id="layout">
+                        <label for="layout-nao">Ja tenho um Layout</label>
+                    </div>
+                </div>
+                    <label for="prazo">Prazo</label>
+                    <input type="range" name="prazo" id="prazo">
+                    <button class="btn btn-orcamento" type="submit">Enviar</button>
+            </form>
+
+        </div>
+    </section>
+    
+
+</body>
+</html>

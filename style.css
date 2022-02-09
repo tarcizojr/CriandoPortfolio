@@ -16,6 +16,7 @@
     --corMenuH: #8f52bb;
     
 }
+/*Simbolo do Menu*/
 .hamburguer{   
     width: 2rem;
     height: 2rem;
@@ -87,7 +88,7 @@ header{
     overflow: hidden;  /* Tira a barra de rolagem inferior caso o conteudo fique muito grande */
     position: relative;
 }
-
+/*Imagem de fundo*/
 .img_weapper{
     width: 100%;
     height: 100%;
@@ -182,6 +183,7 @@ header{
 
 }
 
+/*Menu aberto*/
 .sidebar{
     width: 20rem;
     height: 100vh;
@@ -218,6 +220,7 @@ header{
 
 }
 
+/*Redes Sociais do Menu*/
 .social-media{
     position:  absolute;
     bottom: 2rem;
@@ -398,11 +401,7 @@ card-img-wrapper img{
     width: 80%;
     margin-bottom: 2rem;
 }
-
-.card-info butoon{
-
-    width: 8rem;
-    height: 2.5rem;
+.btn{
     background: #EB5757;  
     background: -webkit-linear-gradient(to left, #000000, #EB5757);  
     background: linear-gradient(to left, #000000, #EB5757); 
@@ -412,7 +411,15 @@ card-img-wrapper img{
     border-radius: .5rem;
     border: none;
     box-shadow: 0 .1rem .8rem  rgba(0, 0, 0, .4);
-    padding: 1rem;   
+    padding: 1rem; 
+    cursor: pointer;  
+}
+
+
+.card-info butoon{
+    width: 8rem;
+    height: 2.5rem;
+    
 }
 
 .card:hover .card-info{
@@ -420,3 +427,186 @@ card-img-wrapper img{
     opacity: 1;
     visibility: visible;
 }
+
+ /*Contato*/
+.sessao-contato{
+    width: 100%;
+    height: 100vh;
+    background-color: #696767;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato-wrapper{
+    width: 60%;
+    height: 30rem;
+    display: flex;
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0,0.5);
+}
+.contato-left{
+    width: 35%;
+    background:linear-gradient(rgba(15,15,15, 0.6),rgba(22,22,22,0.9)), url(imagens/contato.jpg);
+    background-size:cover ;
+}
+
+.contato-right{
+    width: 65%;
+    background-color: #eee;
+    padding: 1rem 3rem 3rem 3rem;
+}
+
+.sessao-contato h1{
+    width: 100%;
+    text-align: center;
+    font-family: var(--font-1);
+    color: #272727;
+    font-size: 3rem;
+    font-weight: lighter;
+}
+
+.sessao-contato form{
+    width: 100%;
+    display: flex;  
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.input-grup{
+    position: relative;
+}
+.field{
+    background: transparent;
+    border: none;
+    width: 20rem;
+    font-size: 1.5rem;
+    font-family: var(--font-2);
+    border-bottom: 2px dashed #636363;
+    height: 3rem;
+    outline: none;
+    margin: 1rem 0;
+}
+.input-grup textarea{
+    padding-top: 1rem;
+    max-width: 25rem;
+    max-height: 10rem;
+}
+
+.field-label{
+    position: absolute;
+    left: 0;
+    top: 2rem;
+    font-size: 1.2rem;
+    font-family: var(--font-2);
+    text-transform: uppercase;
+    transition: all 1.3s;
+}
+
+.field:focus ~ label{
+    top: 0;
+    font-size: 1rem;
+}
+
+.field:focus {
+    border-bottom: 1px solid;
+}
+
+.btn-submit{
+    text-transform: uppercase;
+    width: 100%;
+    height: 3rem;
+    margin-top: 1rem;
+    
+}
+
+.btn-i{
+    background-color: #272727;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.btn-inicio{
+    margin: 1rem;
+    width: 5rem;
+    height: 3rem;
+    text-transform: uppercase;
+    font-family: var(--font-2);
+    font-weight: 800;
+    
+}
+
+/*Orcamento*/
+
+.sessao-orcamento{
+    width: 100%;
+    height: 100vh;
+    background: url(imagens/orcamento.jpg);
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+}
+
+.orcamento-wrapper{
+    position: relative;
+    width: 60%;
+    height: 80%;
+    background-color: #ffffff99;
+    border: 10px;
+    box-shadow: 0 0.1rem 0.3rem #000;
+}
+
+.sessao-orcamento h1{
+    position: absolute;
+    top: -2.5rem;
+    left: 2rem;
+    background-color: #6a3093;
+    color: white;
+    padding: 0 3rem;
+    border-radius: 10px;
+    font-family: var(--font-1);
+    font-size: 3rem;
+    font-weight: lighter;
+    box-shadow: 0 0.1rem 0.3rem #000;
+}
+
+.sessao-orcamento form{
+    margin: 4rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    
+}
+
+.sessao-orcamento label{
+    font-family: var(--font-2);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.sessao-orcamento input[type="number"]{
+    font-family: var(--font-2);
+    width: 4rem;
+    font-size: 2rem;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    padding: 0.2rem;
+}
+
+.sessao-orcamento .btn-orcamento{
+    text-transform: uppercase;
+    padding: 2rem;
+    cursor: pointer;
+    grid-column: 2;
+}
+
+footer{
+    width: 100%;
+    height: 5rem;
+    background-color:#555555;
+    margin-top: 2rem;
+}
+
